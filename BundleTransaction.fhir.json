@@ -1,0 +1,45 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:Patient",
+            "resource" : {
+                "resourceType": "Patient",
+                "name": [
+                    {
+                        "given": [
+                            "Hollow"
+                        ],
+                        "family": "Knight"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        },
+        {
+            "resource" : {
+                "resourceType": "Observation",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "testingObs",
+                            "system": "RandSys",
+                            "display": "Hollow Knight is AWESOME"
+                        }
+                    ]
+                },
+                "subject": {
+                    "type": "Patient",
+                    "reference": "urn:uuid:Patient"
+                }
+            },
+            "request": {
+                "method": "POST"
+            }
+        }
+    ]
+}

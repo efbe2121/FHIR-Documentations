@@ -1,0 +1,35 @@
+{
+    "resourceType": "Observation",
+    "status": "corrected",
+    "meta": {
+        "lastUpdated": "2022-09-14T10:38:00+07:00"
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "vital-signs",
+                    "display": "Vital Signs"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "75327-7",
+                "display": "Life Expectancy [Year]"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/7002458",
+        "display": "Yow"
+    },
+    "valueQuantity": {
+        "value": 30,
+        "unit": "year"
+    }
+}

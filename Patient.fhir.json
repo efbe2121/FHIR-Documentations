@@ -1,0 +1,40 @@
+{
+    "resourceType" : "Patient",
+    "name" : [
+        {
+            "use" : "official",
+            "given" : [
+                "Yohan",
+                "Kristian"
+            ],
+            "family" : "Telaumbanua"
+        }
+    ],
+    "gender" : "male",
+    "birthDate" : "2000-06-17",
+    "telecom": [
+        {
+            "value": "+6285156157728",
+            "use" : "mobile",
+            "system" : "phone",
+            "rank": 1
+        },
+        {
+            "value": "yohan.kristian@elitery.com",
+            "use": "work",
+            "system": "email",
+            "rank": 2
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "14 Jalan Cilandak1"
+            ],
+            "city": "Jakarta",
+            "state": "Jakarta Selatan",
+            "postalCode": "12460",
+            "country": "Indonesia"
+        }
+    ]
+}

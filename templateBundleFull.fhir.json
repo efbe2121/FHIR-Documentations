@@ -1,0 +1,570 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:patient",
+            "resource" : {
+                "resourceType": "Patient",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://fhir.kemkes.go.id/id/nik",
+                        "value": "xxxxxxxxxxxxxx"
+                    },
+                    {
+                        "use": "official",
+                        "system": "https://fhir.kemkes.go.id/id/ihs-number",
+                        "value": "xxxxxxxxxxxx"
+                    },
+                    {
+                        "use": "official",
+                        "system": "https://fhir.kemkes.go.id/id/sima",
+                        "value": "xxxxxxxxx"
+                    }
+                ],
+                "name": [
+                    {
+                        "given": [
+                            "Hollow"
+                        ],
+                        "suffix": [
+                            "Knight"
+                        ],
+                        "family": "USA",
+                        "use": "official",
+                        "text": "Hollow Knight"
+                    }
+                ],
+                "_birthDate": {
+                    "extension": [
+                        {
+                            "url": "https://fhir.kemkes.go.id/id/ihs-number",
+                            "valueDateTime": "1600-06-16T16:16:16+07:00"
+                        }
+                    ]
+                },
+                "gender": "male",
+                "contact": [
+                    {
+                        "name": {
+                            "family": "Valve",
+                            "given": [
+                                "Steam"
+                            ],
+                            "use": "official",
+                            "text": "Steam Valve"
+                        },
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "C",
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0131"
+                                    }
+                                ]
+                            }
+                        ],
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "+62242256611",
+                                "use": "mobile"
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "use": "mobile",
+                        "system": "phone",
+                        "value": "+627778998445"
+                    },
+                    {
+                        "use": "work",
+                        "system": "email",
+                        "value": "hollow@knight.com"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "code": "M",
+                            "display": "Married",
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+                        }
+                    ],
+                    "text": "Married"
+                },
+                "extension": [
+                    {
+                        "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/birthPlace",
+                        "valueAddress": {
+                        "city": "Jakarta",
+                        "country": "ID"
+                        }
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Jakarta",
+                        "country": "ID",
+                        "extension": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "province",
+                                        "valueCode": "DI Jakarta"
+                                    },
+                                    {
+                                        "url": "city",
+                                        "valueCode": "Jakarta"
+                                    },
+                                    {
+                                        "url": "district",
+                                        "valueCode": "Cilandak"
+                                    },
+                                    {
+                                        "url": "village",
+                                        "valueCode": "Cilandak"
+                                    },
+                                    {
+                                        "url": "rt",
+                                        "valueCode": "4"
+                                    },
+                                    {
+                                        "url": "rw",
+                                        "valueCode": "3"
+                                    }
+                                ],
+                                "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+                            }
+                        ],
+                        "line": [
+                            "Jl. Cilandak 1 no 14 Jakarta Selatan"
+                        ],
+                        "postalCode": "12460",
+                        "use": "work"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:practioner",
+            "resource" : {
+                "resourceType": "Practitioner",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://fhir.kemkes.go.id/id/nik",
+                        "value": "xxxxxxxxxxxxxx"
+                    },
+                    {
+                        "use": "official",
+                        "system": "https://fhir.kemkes.go.id/id/nakes-his-number",
+                        "value": "xxxxxxxxxxxx"
+                    },
+                    {
+                        "use": "official",
+                        "system": "https://fhir.kemkes.go.id/id/sima",
+                        "value": "xxxxxxxxx"
+                    }
+                ],
+                "name": [
+                    {
+                        "given": [
+                            "Rollercoaster"
+                        ],
+                        "suffix": [
+                            "Tycoon"
+                        ],
+                        "family": "USA",
+                        "use": "official",
+                        "text": "Rollercoaster Tycoon"
+                    }
+                ],
+                "_birthDate": {
+                    "extension": [
+                        {
+                            "url": "https://fhir.kemkes.go.id/id/ihs-number",
+                            "valueDateTime": "1600-06-26T16:16:16+07:00"
+                        }
+                    ]
+                },
+                "gender": "male",
+                "telecom": [
+                    {
+                        "use": "mobile",
+                        "system": "phone",
+                        "value": "+627778998445"
+                    },
+                    {
+                        "use": "work",
+                        "system": "email",
+                        "value": "Rollercoaster@tycoon.com"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Jakarta",
+                        "country": "ID",
+                        "extension": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "province",
+                                        "valueCode": "DI Jakarta"
+                                    },
+                                    {
+                                        "url": "city",
+                                        "valueCode": "Jakarta"
+                                    },
+                                    {
+                                        "url": "district",
+                                        "valueCode": "Cilandak"
+                                    },
+                                    {
+                                        "url": "village",
+                                        "valueCode": "Cilandak"
+                                    },
+                                    {
+                                        "url": "rt",
+                                        "valueCode": "4"
+                                    },
+                                    {
+                                        "url": "rw",
+                                        "valueCode": "3"
+                                    }
+                                ],
+                                "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+                            }
+                        ],
+                        "line": [
+                            "Jl. Cilandak 1 no 14 Jakarta Selatan"
+                        ],
+                        "postalCode": "12460",
+                        "use": "work"
+                    }
+                ],
+                "qualification": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "STR-KKI",
+                                    "display": "Surat Tanda Regristrasi Dokter",
+                                    "system": "https://terminology.kemkes.go.id/v1-0302"
+                                }
+                            ]
+                        },
+                        "identifier": [
+                            {
+                                "system": "https://fhir.kemkes.go.id/id/str-kki-number",
+                                "use": "official",
+                                "value": "2938/28377/STR/00001"
+                            }
+                        ],
+                        "issuer": {
+                            "display": "Konsil Kedokteran Indonesia",
+                            "reference": "Organization/10000003"
+                        },
+                        "period": {
+                            "end": "2023-01-01",
+                            "start": "1995-01-01"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "BS",
+                                    "display": "Bachelor of Science",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0360"
+                                }
+                            ],
+                            "text": "Bachelor of Science"
+                        },
+                        "identifier": [
+                            {
+                                "system": "http://example-university.ac.id/certificate-number",
+                                "value": "12345"
+                            }
+                        ],
+                        "issuer": {
+                            "display": "Universitas Example",
+                            "reference": "Organization/10000002"
+                        },
+                        "period": {
+                            "start": "2015"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Practitioner"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:organization",
+            "resource" : {
+                "resourceType": "Organization",
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "other",
+                                "display": "Laboratorium",
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Laboratorium Yang Penting Happy",
+                "identifier": [
+                    {
+                        "system": "https://fhir.kemkes.go.id/id/org-number",
+                        "value": "urn:uuid:organization"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "use": "mobile",
+                        "system": "phone",
+                        "value": "+627778998445"
+                    },
+                    {
+                        "use": "work",
+                        "system": "email",
+                        "value": "Rollercoaster@tycoon.com"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Jakarta ",
+                        "country": "ID",
+                        "extension": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "province",
+                                        "valueCode": "31"
+                                    },
+                                    {
+                                        "url": "city",
+                                        "valueCode": "3172"
+                                    }
+                                ],
+                                "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+                            }
+                        ],
+                        "use": "work"
+                    }
+                ],
+                "contact": [
+                    {
+                        "name": {
+                            "family": "Valve",
+                            "given": [
+                                "Steam"
+                            ],
+                            "use": "official",
+                            "text": "Steam Valve"
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "+62242256611",
+                                "use": "mobile"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Organization"
+            }
+        },
+        {
+            "resource" : {
+                "resourceType": "Organization",
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "other",
+                                "display": "Laboratorium",
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Ruangan Eksperimen",
+                "identifier": [
+                    {
+                        "system": "https://fhir.kemkes.go.id/id/org-number",
+                        "value": "1000010"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "use": "mobile",
+                        "system": "phone",
+                        "value": "+627778998445"
+                    },
+                    {
+                        "use": "work",
+                        "system": "email",
+                        "value": "Rollercoaster@tycoon.com"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Jakarta ",
+                        "country": "ID",
+                        "extension": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "province",
+                                        "valueCode": "31"
+                                    },
+                                    {
+                                        "url": "city",
+                                        "valueCode": "3172"
+                                    }
+                                ],
+                                "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+                            }
+                        ],
+                        "use": "work"
+                    }
+                ],
+                "contact": [
+                    {
+                        "name": {
+                            "family": "Valve",
+                            "given": [
+                                "Steam"
+                            ],
+                            "use": "official",
+                            "text": "Steam Valve"
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "+62242256611",
+                                "use": "mobile"
+                            }
+                        ]
+                    }
+                ],
+                "partOf": {
+                    "reference": "urn:uuid:organization"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Organization"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Location",
+                "mode": "instance",
+
+                "status": "active",
+                "name": "Ruangan 552x",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                            "code": "ro",
+                            "display": "room"
+                        }
+                    ]
+                },
+                "managingOrganization": {
+                    "reference": "Organization/urn:uuid:organization"
+                },
+                "address": {
+                    "city": "Jakarta",
+                    "country": "ID",
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "province",
+                                    "valueCode": "10"
+                                },
+                                {
+                                    "url": "city",
+                                    "valueCode": "1010"
+                                },
+                                {
+                                    "url": "district",
+                                    "valueCode": "1010101"
+                                },
+                                {
+                                    "url": "village",
+                                    "valueCode": "1010101101"
+                                },
+                                {
+                                    "url": "rt",
+                                    "valueCode": "1"
+                                },
+                                {
+                                    "url": "rw",
+                                    "valueCode": "2"
+                                }
+                            ],
+                            "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+                        }
+                    ],
+                    "line": [
+                        "Gd. Prof. Dr. Sujudi Lt.5, Jl. H.R. Rasuna Said Blok X5 Kav. 4-9 Kuningan"
+                    ],
+                    "postalCode": "12950",
+                    "use": "work"
+                },
+                "position": {
+                    "altitude": 0,
+                    "latitude": 106.83239885393944,
+                    "longitude": -6.23115426275766
+                },
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "2328"
+                    },
+                    {
+                        "system": "fax",
+                        "use": "work",
+                        "value": "2329"
+                    },
+                    {
+                        "system": "email",
+                        "value": "second wing admissions"
+                    },
+                    {
+                        "system": "url",
+                        "use": "work",
+                        "value": "http://sampleorg.com/southwing"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Location"
+            }
+        }
+    ]
+}
